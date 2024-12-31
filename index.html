@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Socialbook</title>
+  <link rel="stylesheet" href="css/master.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Googel Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@300;400;500;600&family=Rubik:ital,wght@0,300..900;1,300..900&family=Zen+Dots&display=swap" rel="stylesheet">
+  <!-- Swiper Link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+  <div class="my-page">
+    <!-- Start Of Theme -->
+    <div class="theme-box">
+      <i class="fa-solid fa-xmark close"></i>
+      <h3>Customize your view</h3>
+      <p>Manage your color and background</p>
+      <span>Color</span>
+      <ul class="color">
+        <li class="color-active" data-color="#6b4ce6"></li>
+        <li data-color="#ffff00"></li>
+        <li data-color="#fa3838"></li>
+        <li data-color="#38fa38"></li>
+        <li data-color="#0099ff"></li>
+      </ul>
+      <span>Background</span>
+      <ul class="background">
+        <li class="background-active" data-background="light"><span></span>Light</li>
+        <li data-background="dark"><span></span>Dim</li>
+      </ul>
+    </div>
+    <!-- End Of Theme -->
+    <!-- Start Headr -->
+    <div class="headr">
+      <div class="contanier">
+        <span class="logo">Socialbook</span>
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" name="seaarch-in-page" placeholder="Search for creactors, inspiration, and projects">
+        </div>
+        <div class="button-img">
+          <button class="buttons ">Create</button>
+          <img src="imgs/story-profile10.jpg" class="profile-img">
+        </div>
+      </div>
+    </div>
+    <!-- End Headr -->
+    <!-- Start Page Content -->
+    <div class="page-content">
+      <div class="contanier">
+        <!-- Start Left Sidebar -->
+        <div class="left-sidebar">
+          <div class="acount background-box">
+            <img src="imgs/story-profile10.jpg" class="profile-img">
+            <div class="name">
+              <span class="color-white">Joseph Ayi</span>
+              <span class="color-white">@joseph</span>
+            </div>
+          </div>
+          <ul class="links background-box">
+            <li class="active ">
+              <i class="fa-solid fa-house"></i>
+              <span>Home</span>
+              <span class="before"></span>
+            </li>
+            <li class="">
+              <i class="fa-solid fa-compass"></i>
+              <span>Explore</span>
+              <span class="before"></span>
+            </li>
+            <li class="notifications ">
+              <i class="fa-solid fa-bell"></i>
+              <span>Notifications</span>
+              <div class="notific-box background-box">
+                <div class="box">
+                  <img src="imgs/post-profile13.jpg" class="profile-img">
+                  <div class="info">
+                    <span class="name color-white">Koke Benjamin</span>
+                    <span class="action">accepted your friend request</span>
+                    <span class="time">2 DAYS AGO</span>
+                  </div>
+                </div>
+                <div class="box">
+                  <img src="imgs/post-profile2.jpg" class="profile-img">
+                  <div class="info">
+                    <span class="name color-white">Mike Jordon</span>
+                    <span class="action">commented on your post</span>
+                    <span class="time">40 MINUTE AGO</span>
+                  </div>
+                </div>
+                <div class="box">
+                  <img src="imgs/post-profile10.jpg" class="profile-img">
+                  <div class="info">
+                    <span class="name color-white">Jake Bown</span>
+                    <span class="action">and 288 others liked your post</span>
+                    <span class="time">4 MINUTE AGO</span>
+                  </div>
+                </div>
+                <div class="box">
+                  <img src="imgs/post-profile9.jpg" class="profile-img">
+                  <div class="info">
+                    <span class="name color-white">Marry Doe</span>
+                    <span class="action">comment on your post</span>
+                    <span class="time">1 HOUR AGO</span>
+                  </div>
+                </div>
+                <div class="box">
+                  <img src="imgs/post-profile8.jpg" class="profile-img">
+                  <div class="info">
+                    <span class="name color-white">Antony Dany</span>
+                    <span class="action">accepted your friend request</span>
+                    <span class="time">1 DAY AGO</span>
+                  </div>
+                </div>
+              </div>
+              <span class="before"></span>
+            </li>
+            <li class="message ">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Message</span>
+              <span class="before"></span>
+            </li>
+            <li class="">
+              <i class="fa-solid fa-bookmark"></i>
+              <span>Bookmarks</span>
+              <span class="before"></span>
+            </li>
+            <li class="">
+              <i class="fa-solid fa-chart-line"></i>
+              <span>Analytics</span>
+              <span class="before"></span>
+            </li>
+            <li class="theme ">
+              <i class="fa-solid fa-palette"></i>
+              <span>Theme</span>
+              <span class="before"></span>
+            </li>
+            <li class="">
+              <i class="fa-solid fa-gear"></i>
+              <span>Settings</span>
+              <span class="before"></span>
+            </li>
+          </ul>
+          <button class="buttons ">Create Post</button>
+        </div>
+        <!-- End Left Sidebar -->
+        <!-- Start Content -->
+        <div class="content">
+          <div class="stories">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="imgs/story-profile1.jpg" class="profile-img">
+                  <img src="imgs/story1.jpg">
+                  <span>Mike Edourd</span>
+                </div>
+                <div class="swiper-slide">
+                  <img src="imgs/story-profile2and5.jpg" class="profile-img">
+                  <img src="imgs/story2.jpg">
+                  <span>Dana Smith</span>
+                </div>
+                <div class="swiper-slide">
+                  <img src="imgs/story-profile3.jpg" class="profile-img">
+                  <img src="imgs/story3.jpg">
+                  <span>Jacob Willian</span>
+                </div>
+                <div class="swiper-slide">
+                  <img src="imgs/story-profile4.jpg" class="profile-img">
+                  <img src="imgs/story4.jpg">
+                  <span>Young Son</span>
+                </div>
+                <div class="swiper-slide">
+                  <img src="imgs/story-profile2and5.jpg" class="profile-img">
+                  <img src="imgs/story5.jpg">
+                  <span>Dana Smith</span>
+                </div>
+                <div class="swiper-slide">
+                  <img src="imgs/story-profile7.jpg" class="profile-img">
+                  <img src="imgs/story7.jpg">
+                  <span>Mikel Bown</span>
+                </div>
+                <div class="swiper-slide">
+                  <img src="imgs/story-profile8.jpg" class="profile-img">
+                  <img src="imgs/story8.jpg">
+                  <span>Lana James</span>
+                </div>
+                <div class="swiper-slide">
+                  <img src="imgs/story-profile9.jpg" class="profile-img">
+                  <img src="imgs/story9.jpg">
+                  <span>Martin Smill</span>
+                </div>
+                <div class="swiper-slide">
+                  <img src="imgs/story-profile10.jpg" class="profile-img">
+                  <img src="imgs/story10.jpg">
+                  <span>Joseph Ayi</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post background-box">
+            <img src="imgs/story-profile10.jpg" class="profile-img">
+            <input type="text" placeholder="What is on your mind Joseph?">
+            <button class="buttons ">Post</button>
+          </div>
+          <!-- Start Post One -->
+          <div class="box background-box">
+            <div class="person-post">
+              <div class="person-info">
+                <img src="imgs/post-profile1.jpg" class="profile-img">
+                <div class="name-time">
+                  <span class="name color-white">Benjamin</span>
+                  <span class="time">2 MINUTE AGO</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis color-white"></i>
+            </div>
+            <img src="imgs/post1.jpg" class="post-img">
+            <div class="icons">
+              <div class="left-icons">
+                <i class="fa-regular fa-heart color-white "></i>
+                <i class="fa-regular fa-comment-dots color-white "></i>
+                <i class="fa-solid fa-share-nodes color-white "></i>
+              </div>
+              <div class="right-icons">
+                <i class="fa-regular fa-bookmark color-white"></i>
+              </div>
+            </div>
+            <div class="likes">
+              <div class="imgs">
+                <img src="imgs/post-profile15.jpg">
+                <img src="imgs/post-profile16.jpg">
+                <img src="imgs/post-profile3.jpg">
+              </div>
+              <span class="color-white ">Liked By Joseph and 2000 others</span>
+            </div>
+            <span class="number-comment">View all 200 comments</span>
+          </div>
+          <!-- End Post One -->
+          <!-- Start Post Two -->
+          <div class="box background-box">
+            <div class="person-post">
+              <div class="person-info">
+                <img src="imgs/post-profile2.jpg" class="profile-img">
+                <div class="name-time">
+                  <span class="name color-white">Mayik</span>
+                  <span class="time">8 MINUTE AGO</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis color-white"></i>
+            </div>
+            <img src="imgs/post16.jpg" class="post-img">
+            <div class="icons">
+              <div class="left-icons">
+                <i class="fa-regular fa-heart color-white "></i>
+                <i class="fa-regular fa-comment-dots color-white "></i>
+                <i class="fa-solid fa-share-nodes color-white "></i>
+              </div>
+              <div class="right-icons">
+                <i class="fa-regular fa-bookmark color-white"></i>
+              </div>
+            </div>
+            <div class="likes">
+              <div class="imgs">
+                <img src="imgs/post-profile4.jpg">
+                <img src="imgs/post-profile11.jpg">
+                <img src="imgs/post-profile8.jpg">
+              </div>
+              <span class="color-white ">Liked By Lana and  687 others</span>
+            </div>
+            <span class="number-comment">View all 290 comments</span>
+          </div>
+          <!-- End Post Two -->
+          <!-- Start Post Three -->
+          <div class="box background-box">
+            <div class="person-post">
+              <div class="person-info">
+                <img src="imgs/post-profile3.jpg" class="profile-img">
+                <div class="name-time">
+                  <span class="name color-white">Lana</span>
+                  <span class="time">15 MINUTE AGO</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis color-white"></i>
+            </div>
+            <img src="imgs/post3.jpg" class="post-img">
+            <div class="icons">
+              <div class="left-icons">
+                <i class="fa-regular fa-heart color-white "></i>
+                <i class="fa-regular fa-comment-dots color-white "></i>
+                <i class="fa-solid fa-share-nodes color-white "></i>
+              </div>
+              <div class="right-icons">
+                <i class="fa-regular fa-bookmark color-white"></i>
+              </div>
+            </div>
+            <div class="likes">
+              <div class="imgs" class="post-img">
+                <img src="imgs/post-profile7.jpg">
+                <img src="imgs/post-profile16.jpg">
+                <img src="imgs/post-profile14.jpg">
+              </div>
+              <span class="color-white ">Liked By Rodigr and 2000 others</span>
+            </div>
+            <span class="number-comment">View all 420 comments</span>
+          </div>
+          <!-- End Post Three -->
+          <!-- Start Post Four -->
+          <div class="box background-box">
+            <div class="person-post">
+              <div class="person-info">
+                <img src="imgs/post-profile4.jpg" class="profile-img">
+                <div class="name-time">
+                  <span class="name color-white">Jacika</span>
+                  <span class="time">9 MINUTE AGO</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis color-white"></i>
+            </div>
+            <img src="imgs/post4.jpg" class="post-img">
+            <div class="icons">
+              <div class="left-icons">
+                <i class="fa-regular fa-heart color-white "></i>
+                <i class="fa-regular fa-comment-dots color-white "></i>
+                <i class="fa-solid fa-share-nodes color-white "></i>
+              </div>
+              <div class="right-icons">
+                <i class="fa-regular fa-bookmark color-white"></i>
+              </div>
+            </div>
+            <div class="likes">
+              <div class="imgs">
+                <img src="imgs/post-profile15.jpg">
+                <img src="imgs/post-profile16.jpg">
+                <img src="imgs/post-profile3.jpg">
+              </div>
+              <span class="color-white ">Liked By Joseph and 2000 others</span>
+            </div>
+            <span class="number-comment">View all 450 comments</span>
+          </div>
+          <!-- End Post Four -->
+          <!-- Start Post Five -->
+          <div class="box background-box">
+            <div class="person-post">
+              <div class="person-info">
+                <img src="imgs/post-profile5.jpg" class="profile-img">
+                <div class="name-time">
+                  <span class="name color-white">Dana</span>
+                  <span class="time">2 MINUTE AGO</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis color-white"></i>
+            </div>
+            <img src="imgs/post13.jpg" class="post-img">
+            <div class="icons">
+              <div class="left-icons">
+                <i class="fa-regular fa-heart color-white "></i>
+                <i class="fa-regular fa-comment-dots color-white "></i>
+                <i class="fa-solid fa-share-nodes color-white "></i>
+              </div>
+              <div class="right-icons">
+                <i class="fa-regular fa-bookmark color-white"></i>
+              </div>
+            </div>
+            <div class="likes">
+              <div class="imgs">
+                <img src="imgs/post-profile5.jpg">
+                <img src="imgs/post-profile10.jpg">
+                <img src="imgs/post-profile13.jpg">
+              </div>
+              <span class="color-white ">Liked By Lana and 2000 others</span>
+            </div>
+            <span class="number-comment">View all 100 comments</span>
+          </div>
+          <!-- End Post Five -->
+          <!-- Start Post Six -->
+          <div class="box background-box">
+            <div class="person-post">
+              <div class="person-info">
+                <img src="imgs/post-profile6.jpg" class="profile-img">
+                <div class="name-time">
+                  <span class="name color-white">Marcos</span>
+                  <span class="time">1 MINUTE AGO</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis color-white"></i>
+            </div>
+            <img src="imgs/post6.jpg" class="post-img">
+            <div class="icons">
+              <div class="left-icons">
+                <i class="fa-regular fa-heart color-white"></i>
+                <i class="fa-regular fa-comment-dots color-white"></i>
+                <i class="fa-solid fa-share-nodes color-white"></i>
+              </div>
+              <div class="right-icons">
+                <i class="fa-regular fa-bookmark color-white"></i>
+              </div>
+            </div>
+            <div class="likes">
+              <div class="imgs">
+                <img src="imgs/post-profile1.jpg">
+                <img src="imgs/post-profile6.jpg">
+                <img src="imgs/post-profile8.jpg">
+              </div>
+              <span class="color-white ">Liked By Jone and 470 others</span>
+            </div>
+            <span class="number-comment">View all 190 comments</span>
+          </div>
+          <!-- End Post Six -->
+          <!-- Start Post Eight -->
+          <div class="box background-box">
+            <div class="person-post">
+              <div class="person-info">
+                <img src="imgs/post-profile8.jpg" class="profile-img">
+                <div class="name-time">
+                  <span class="name color-white">Adriano</span>
+                  <span class="time">11 MINUTE AGO</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis color-white"></i>
+            </div>
+            <img src="imgs/post8.jpg" class="post-img">
+            <div class="icons">
+              <div class="left-icons">
+                <i class="fa-regular fa-heart color-white "></i>
+                <i class="fa-regular fa-comment-dots color-white "></i>
+                <i class="fa-solid fa-share-nodes color-white "></i>
+              </div>
+              <div class="right-icons">
+                <i class="fa-regular fa-bookmark color-white"></i>
+              </div>
+            </div>
+            <div class="likes">
+              <div class="imgs">
+                <img src="imgs/post-profile5.jpg">
+                <img src="imgs/post-profile6.jpg">
+                <img src="imgs/post-profile3.jpg">
+              </div>
+              <span class="color-white ">Liked By Bowen and 2960 others</span>
+            </div>
+            <span class="number-comment">View all 220 comments</span>
+          </div>
+          <!-- End Post Eight -->
+          <!-- Start Post Nine -->
+          <div class="box background-box">
+            <div class="person-post">
+              <div class="person-info">
+                <img src="imgs/post-profile9.jpg" class="profile-img">
+                <div class="name-time">
+                  <span class="name color-white">Lana</span>
+                  <span class="time">7 MINUTE AGO</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis color-white"></i>
+            </div>
+            <img src="imgs/post9.jpg" class="post-img">
+            <div class="icons">
+              <div class="left-icons">
+                <i class="fa-regular fa-heart color-white "></i>
+                <i class="fa-regular fa-comment-dots color-white "></i>
+                <i class="fa-solid fa-share-nodes color-white "></i>
+              </div>
+              <div class="right-icons">
+                <i class="fa-regular fa-bookmark color-white"></i>
+              </div>
+            </div>
+            <div class="likes">
+              <div class="imgs">
+                <img src="imgs/post-profile9.jpg">
+                <img src="imgs/post-profile6.jpg">
+                <img src="imgs/post-profile1.jpg">
+              </div>
+              <span class="color-white ">Liked By Lana and 1470 others</span>
+            </div>
+            <span class="number-comment">View all 60 comments</span>
+          </div>
+          <!-- End Post Nine -->
+          <!-- Start Post Ten -->
+          <div class="box background-box">
+            <div class="person-post">
+              <div class="person-info">
+                <img src="imgs/post-profile10.jpg" class="profile-img">
+                <div class="name-time">
+                  <span class="name color-white">Rodigo</span>
+                  <span class="time">20 MINUTE AGO</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis color-white"></i>
+            </div>
+            <img src="imgs/post10.jpg" class="post-img">
+            <div class="icons">
+              <div class="left-icons">
+                <i class="fa-regular fa-heart color-white "></i>
+                <i class="fa-regular fa-comment-dots color-white "></i>
+                <i class="fa-solid fa-share-nodes color-white "></i>
+              </div>
+              <div class="right-icons">
+                <i class="fa-regular fa-bookmark color-white"></i>
+              </div>
+            </div>
+            <div class="likes">
+              <div class="imgs">
+                <img src="imgs/post-profile15.jpg">
+                <img src="imgs/post-profile16.jpg">
+                <img src="imgs/post-profile3.jpg">
+              </div>
+              <span class="color-white ">Liked By Dana and 980 others</span>
+            </div>
+            <span class="number-comment">View all 160 comments</span>
+          </div>
+          <!-- End Post Ten -->
+          <!-- Start Post Eleven -->
+          <div class="box background-box">
+            <div class="person-post">
+              <div class="person-info">
+                <img src="imgs/post-profile11.jpg" class="profile-img">
+                <div class="name-time">
+                  <span class="name color-white">Lucas</span>
+                  <span class="time">18 MINUTE AGO</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis color-white"></i>
+            </div>
+            <img src="imgs/post11.jpg" class="post-img">
+            <div class="icons">
+              <div class="left-icons">
+                <i class="fa-regular fa-heart color-white "></i>
+                <i class="fa-regular fa-comment-dots color-white "></i>
+                <i class="fa-solid fa-share-nodes color-white "></i>
+              </div>
+              <div class="right-icons">
+                <i class="fa-regular fa-bookmark color-white"></i>
+              </div>
+            </div>
+            <div class="likes">
+              <div class="imgs">
+                <img src="imgs/post-profile4.jpg">
+                <img src="imgs/post-profile7.jpg">
+                <img src="imgs/post-profile10.jpg">
+              </div>
+              <span class="color-white ">Liked By Dany and 1150 others</span>
+            </div>
+            <span class="number-comment">View all 200 comments</span>
+          </div>
+          <!-- End Post Eleven -->
+          <!-- Start Post Tewelve -->
+          <div class="box background-box">
+            <div class="person-post">
+              <div class="person-info">
+                <img src="imgs/post-profile12.jpg" class="profile-img">
+                <div class="name-time">
+                  <span class="name color-white">Dany</span>
+                  <span class="time">17 MINUTE AGO</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis color-white"></i>
+            </div>
+            <img src="imgs/post12.jpg" class="post-img">
+            <div class="icons">
+              <div class="left-icons">
+                <i class="fa-regular fa-heart color-white "></i>
+                <i class="fa-regular fa-comment-dots color-white "></i>
+                <i class="fa-solid fa-share-nodes color-white "></i>
+              </div>
+              <div class="right-icons">
+                <i class="fa-regular fa-bookmark color-white"></i>
+              </div>
+            </div>
+            <div class="likes">
+              <div class="imgs">
+                <img src="imgs/post-profile12.jpg">
+                <img src="imgs/post-profile6.jpg">
+                <img src="imgs/post-profile3.jpg">
+              </div>
+              <span class="color-white ">Liked By Joseph and 1000 others</span>
+            </div>
+            <span class="number-comment">View all 207 comments</span>
+          </div>
+          <!-- End Post Tewelve -->
+        </div>
+        <!-- End Content -->
+        <!-- Start right Sidebar -->
+        <div class="right-sidebar">
+          <div class="message-part background-box">
+            <div class="title">
+              <span class="color-white">Message</span>
+              <i class="fa-solid fa-pen-to-square color-white"></i>
+            </div>
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="search" name="seaarch-in-page" placeholder="Search Message">
+            </div>
+            <ul class="parts">
+              <li class="active2 color-white"><span class="after"></span>Primary</li>
+              <li class="color-white"><span class="after"></span>General</li>
+              <li class="color-white"><span class="after"></span>Requests<span>(7)</span></li>
+            </ul>
+            <div class="messages">
+              <div class="box">
+                <img src="imgs/post-profile1.jpg" class="profile-img">
+                <div class="name-message">
+                  <span class="name color-white">Dane Mansh</span>
+                  <span>Just wake up</span>
+                </div>
+              </div>
+              <div class="box">
+                <img src="imgs/post-profile2.jpg" class="profile-img">
+                <div class="name-message">
+                  <span class="name color-white">Mike Numly</span>
+                  <span>Thanks</span>
+                </div>
+              </div>
+              <div class="box">
+                <img src="imgs/post-profile4.jpg" class="profile-img">
+                <div class="name-message">
+                  <span class="name color-white">Lana Popy</span>
+                  <span>Ok</span>
+                </div>
+              </div>
+              <div class="box">
+                <img src="imgs/post-profile7.jpg" class="profile-img">
+                <div class="name-message">
+                  <span class="name color-white">Jonson Negwn</span>
+                  <span>I will do this</span>
+                </div>
+              </div>
+              <div class="box">
+                <img src="imgs/post-profile5.jpg" class="profile-img">
+                <div class="name-message">
+                  <span class="name color-white">Dana Gordon</span>
+                  <span>Ask him please</span>
+                </div>
+              </div>
+              <div class="box">
+                <img src="imgs/post-profile6.jpg" class="profile-img">
+                <div class="name-message">
+                  <span class="name color-white">Martins sarr</span>
+                  <span>Birthday tomorrow</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="requests">
+            <span class="color-white">Requests</span>
+            <div class="box background-box">
+              <img src="imgs/story1.jpg" class="profile-img">
+              <div class="name">
+                <span class="name color-white">Jake Makly</span>
+                <span class="friends-us">8 mutual friends</span>
+              </div>
+              <div class="box-buttons">
+                <button class="buttons ">Accept</button>
+                <button class="another-button buttons ">Delete</button>
+              </div>
+            </div>
+            <div class="box background-box">
+              <img src="imgs/story12.jpg" class="profile-img">
+              <div class="name">
+                <span class="name color-white">Marcos Marty</span>
+                <span class="friends-us">2 mutual friends</span>
+              </div>
+              <div class="box-buttons">
+                <button class="buttons ">Accept</button>
+                <button class="another-button buttons ">Delete</button>
+              </div>
+            </div>
+            <div class="box background-box">
+              <img src="imgs/story5.jpg" class="profile-img">
+              <div class="name">
+                <span class="name color-white">Aina Bradly</span>
+                <span class="friends-us">15 mutual friends</span>
+              </div>
+              <div class="box-buttons">
+                <button class="buttons ">Accept</button>
+                <button class="another-button buttons ">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End right Sidebar -->
+      </div>
+    </div>
+    <!-- End Page Content -->
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
